@@ -36,15 +36,16 @@ const SliderMain = () => {
     <ThemeProvider theme={Theme}>
       <Grid container justifyContent="center">
         <Grid item xs={7}>
-          <Paper elevation={5} sx={{ height: '15rem', mt: 5, p: 3 }}>
+          <Paper elevation={5} sx={{ height: '12rem', mt: 5, p: 3 }}>
             <Typography variant="body2" align="center">
               {allData[userId]?.title}
             </Typography>
-            <Grid container justifyContent="center" mt={3}>
+           
+          </Paper>
+          <Grid container justifyContent="center" mt={3} sx={{cursor:"pointer"}}>
               <ArrowBackIosIcon sx={{ ml: 3 }} onClick={handelleft} />
               <ArrowForwardIosIcon onClick={handelRight} />
             </Grid>
-          </Paper>
         </Grid>
       </Grid>
     </ThemeProvider>

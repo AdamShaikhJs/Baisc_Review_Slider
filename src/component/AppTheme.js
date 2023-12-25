@@ -10,6 +10,10 @@ export const Theme = createTheme({
       fontFamily: 'serif',
       color: 'red',
     },
+    body2:{
+      color: 'red',
+      fontWeight:"bold"
+    },
     button: {
       textTransform: 'none',
     },
